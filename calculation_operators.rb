@@ -1,29 +1,18 @@
-def operation_lists
-  puts "Enter 1 Add"
-  puts "Enter 2 Sub"
-  puts "Enter 3 Divide"
-  puts "Enter 4 Multiply"
-  puts "Enter 5 Module"
+def calculate(num1, num2)
+    addition = num1.to_f + num2.to_f
+    puts "The first number added to second number is #{addition}"
+    subtraction = num1.to_f + num2.to_f
+    puts "The first number subtracted to second number is #{subtraction}"
+    divide = num1.to_f / num2.to_f
+    puts "The first number divided by second number is #{divide}"
+    mul = num1.to_f * num2.to_f
+    puts "The first number multiplied to second number is #{mul}"
+    div = num1.to_f % num2.to_f
+    puts "The first number mod to second number is #{div}"
 end
 
-def calculate(num1,num2,operation)
-  if operation == "1"
-    num1.to_i + num2.to_i
-  elsif operation == "2"
-    num1.to_i - num2.to_i
-  elsif operation == "3"
-    num1.to_i / num2.to_i
-  elsif operation == "4"
-    num1.to_i * num2.to_i
-  elsif operation == "5"
-    num1.to_i % num2.to_i
-  end
-
-end
-
-puts "What opersation do you want to perform today?"
-operation_lists
-operation = gets.chomp
+puts "Simple Calculation"
+puts "-" * 30
 
 puts "Enter the first number"
 num1 = gets.chomp
@@ -31,7 +20,6 @@ num1 = gets.chomp
 puts "Enter the second number"
 num2 = gets.chomp
 
-result = calculate(num1,num2,operation)
+calculate(num1, num2)
 
-puts "The operation is: #{operation}  for number #{num1} and #{num2}"
-puts "Result: #{result}"
+

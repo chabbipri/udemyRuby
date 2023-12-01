@@ -20,3 +20,8 @@ p 'My first name is #{first_name} and my last name is #{last_name}' # #{first_na
 p "".nil?   # false
 p nil.nil?  # nil
 p "".empty? #true
+
+# Camparison Operaters
+# ==
+# !=
+#
