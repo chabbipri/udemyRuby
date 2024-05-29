@@ -17,9 +17,9 @@ array.last # 5
 
 # Adding values to array
 array << 6 # 1, 2, 3, 4, 5, 6]
-array.unshift(0) # [0, 1, 2, 3, 4, 5, 6]
-array.append(7) # [0, 1, 2, 3, 4, 5, 6, 7]
-array.push(8) # [0, 1, 2, 3, 4, 5, 6, 7, 8]
+array.unshift(0) # [0, 1, 2, 3, 4, 5, 6] # Adds value at the start
+array.append(7) # [0, 1, 2, 3, 4, 5, 6, 7] # Adds the elemnt at the end
+array.push(8) # [0, 1, 2, 3, 4, 5, 6, 7, 8] # Adds the element at the end.
 array.pop # [0, 1, 2, 3, 4, 5, 6, 7] # Removes the last item
 array.join # "01234567"
 array.join("-") # ""0-1-2-3-4-5-6-7""
